@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 108149631}
   - component: {fileID: 108149630}
   - component: {fileID: 108149629}
+  - component: {fileID: 108149633}
   m_Layer: 0
   m_Name: Cam_X+
   m_TagString: Untagged
@@ -165,10 +166,10 @@ Camera:
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
+    x: 0.5
+    y: 0.5
+    width: 0.5
+    height: 0.5
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -202,6 +203,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
+--- !u!114 &108149633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 108149628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4658b2ea8e2eafc45a5c9cbb945c682f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseSensitivity: 10
+  target: {fileID: 145304862}
+  dstFromTarget: 5
+  pitchMinMax: {x: -40, y: 85}
+  rotationSmoothTime: 1.2
 --- !u!1 &145304858
 GameObject:
   m_ObjectHideFlags: 0
@@ -363,6 +380,7 @@ GameObject:
   - component: {fileID: 507993953}
   - component: {fileID: 507993952}
   - component: {fileID: 507993951}
+  - component: {fileID: 507993954}
   m_Layer: 0
   m_Name: Cam_X-
   m_TagString: Untagged
@@ -393,10 +411,10 @@ Camera:
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0
+    x: 0.5
     y: 0
-    width: 1
-    height: 1
+    width: 0.5
+    height: 0.5
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -430,6 +448,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &507993954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 507993950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4658b2ea8e2eafc45a5c9cbb945c682f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseSensitivity: 10
+  target: {fileID: 145304862}
+  dstFromTarget: 5
+  pitchMinMax: {x: -40, y: 85}
+  rotationSmoothTime: 1.2
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -440,6 +474,7 @@ GameObject:
   - component: {fileID: 534669905}
   - component: {fileID: 534669904}
   - component: {fileID: 534669903}
+  - component: {fileID: 534669906}
   m_Layer: 0
   m_Name: Cam_Z+
   m_TagString: Untagged
@@ -471,9 +506,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0
-    width: 1
-    height: 1
+    y: 0.5
+    width: 0.5
+    height: 0.5
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -507,6 +542,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &534669906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4658b2ea8e2eafc45a5c9cbb945c682f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseSensitivity: 10
+  target: {fileID: 145304862}
+  dstFromTarget: 5
+  pitchMinMax: {x: -40, y: 85}
+  rotationSmoothTime: 1.2
 --- !u!1 &1373741248
 GameObject:
   m_ObjectHideFlags: 0
@@ -517,6 +568,7 @@ GameObject:
   - component: {fileID: 1373741251}
   - component: {fileID: 1373741250}
   - component: {fileID: 1373741249}
+  - component: {fileID: 1373741252}
   m_Layer: 0
   m_Name: Cam_Z-
   m_TagString: Untagged
@@ -549,8 +601,8 @@ Camera:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1
-    height: 1
+    width: 0.5
+    height: 0.5
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -584,3 +636,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1373741252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1373741248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4658b2ea8e2eafc45a5c9cbb945c682f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseSensitivity: 10
+  target: {fileID: 145304862}
+  dstFromTarget: 5
+  pitchMinMax: {x: -40, y: 85}
+  rotationSmoothTime: 1.2

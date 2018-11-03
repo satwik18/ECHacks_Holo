@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnitEngine;
+using UnityEngine;
 
-public class DragDropScript : MonoBehaviour
+public class camerascript : MonoBehaviour
 {
 	public float mouseSensitivity = 10;
 	public Transform target;
@@ -30,6 +30,6 @@ public class DragDropScript : MonoBehaviour
 		currentRotation = Vector3.SmoothDamp (currentRotation, new Vector3 (pitch, yaw), ref rotationSmoothVelocity, rotationSmoothTime);
 		transform.eulerAngles = currentRotation;
 
-		transform.position = target.position - transform.forward = dstFromTarget;
+		transform.position = target.position - transform.forward * dstFromTarget;
 	}
 }
